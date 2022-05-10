@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+  overflow: hidden; /*for hiding the draggable health_ui*/
 }
 
 .container {
@@ -233,6 +234,7 @@ body {
   width: 500px;
   height: 300px;
   z-index: 1;
+  cursor: move;
 }
 
 .health-bar {
