@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 
 export const entity = (() => {
   class Entity {
@@ -120,15 +120,15 @@ export const entity = (() => {
       this.parent_ = null
     }
 
-    Destroy() {}
+    Destroy() { }
 
     SetParent(p) {
       this.parent_ = p
     }
 
-    InitComponent() {}
+    InitComponent() { }
 
-    InitEntity() {}
+    InitEntity() { }
 
     GetComponent(n) {
       return this.parent_.GetComponent(n)
@@ -150,7 +150,7 @@ export const entity = (() => {
       this.parent_.Broadcast(m)
     }
 
-    Update(_) {}
+    Update(_) { }
 
     _RegisterHandler(n, h) {
       this.parent_._RegisterHandler(n, h)

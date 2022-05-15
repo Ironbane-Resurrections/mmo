@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 import { entity } from './entity.js'
 import { quadtree } from './quadtree.js'
 import { terrain_builder_threaded } from './terrain-builder-threaded.js'
@@ -6,9 +6,9 @@ import { terrain_shader } from './terrain-shader.js'
 import { texture_splatter } from './texture-splatter.js'
 import { textures } from './textures.js'
 import { utils } from './utils.js'
-import { noise } from '/shared/noise.js'
-import { terrain_constants } from '/shared/terrain-constants.js'
-import { terrain_height } from '/shared/terrain-height.js'
+import { noise } from '../shared/noise.js'
+import { terrain_constants } from '../shared/terrain-constants.js'
+import { terrain_height } from '../shared/terrain-height.js'
 
 export const terrain = (function () {
   class TerrainChunkManager extends entity.Component {
@@ -58,6 +58,9 @@ export const terrain = (function () {
       })
 
       this._material.onBeforeCompile = (s) => {
+        s.isWebGL2 = true
+        s.glslVersion = "300 es"
+
         let a = 0
         let vsh = s.vertexShader
         vsh = terrain_shader.VS1 + s.vertexShader

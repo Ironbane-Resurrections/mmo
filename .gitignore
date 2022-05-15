@@ -3,3 +3,4 @@
 /.vscode
 yarn.lock
 package-lock.json
+config.js

@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 import { entity } from './entity.js'
 
 export const player_input = (() => {
@@ -7,7 +7,7 @@ export const player_input = (() => {
       super()
     }
 
-    InitComponent() {}
+    InitComponent() { }
   }
 
   class BasicCharacterControllerInput extends entity.Component {

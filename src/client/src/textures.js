@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 
 export const textures = (function () {
   // Taken from https://github.com/mrdoob/three.js/issues/758
@@ -18,7 +18,7 @@ export const textures = (function () {
       constructor(params) {
         this._threejs = params.threejs
         this._Create()
-        this.onLoad = () => {}
+        this.onLoad = () => { }
       }
 
       Load(atlas, names) {

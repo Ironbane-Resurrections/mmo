@@ -41,8 +41,14 @@ export const network_controller = (() => {
       return n1 + ' ' + n2
     }
 
+
     SetupSocket_() {
-      this.socket_ = io('ws://localhost:3000', {
+      // Edit as necessary
+      const socketHost = window.location.hostname
+      const socketPath = '/simmo/socket'
+
+      this.socket_ = io(`wss://${socketHost}`, {
+        path: socketPath,
         reconnection: false,
         transports: ['websocket'],
         timeout: 10000

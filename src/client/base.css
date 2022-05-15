@@ -6,7 +6,9 @@ body {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
-  overflow: hidden; /*for hiding the draggable health_ui*/
+
+  /*for hiding the draggable health_ui*/
+  overflow: hidden;
 }
 
 .container {
@@ -17,7 +19,7 @@ body {
 
 .ui {
   width: 100%;
-  height: 100%;            
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -35,7 +37,7 @@ body {
 .login-screen {
   position: absolute;
   width: 100%;
-  height: 100%;            
+  height: 100%;
   top: 0;
   left: 0;
   font-family: 'IM Fell French Canon', serif;
@@ -55,6 +57,7 @@ body {
     opacity: 1.0;
     visibility: visible;
   }
+
   to {
     opacity: 0.0;
     visibility: hidden;
@@ -118,7 +121,7 @@ body {
 .chat-ui {
   position: absolute;
   left: 10px;
-  bottom: 10px; 
+  bottom: 10px;
   background: rgba(1.0, 1.0, 1.0, 0.0);
   width: 400px;
   height: 200px;

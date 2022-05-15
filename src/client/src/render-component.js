@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
 import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/OBJLoader.js'
 import { entity } from './entity.js'
@@ -152,7 +152,7 @@ export const render_component = (() => {
       })
     }
 
-    Update(timeInSeconds) {}
+    Update(timeInSeconds) { }
   }
 
   return {
