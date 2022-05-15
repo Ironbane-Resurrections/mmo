@@ -58,6 +58,9 @@ export const terrain = (function () {
       })
 
       this._material.onBeforeCompile = (s) => {
+        s.isWebGL2 = true
+        s.glslVersion = "300 es"
+
         let a = 0
         let vsh = s.vertexShader
         vsh = terrain_shader.VS1 + s.vertexShader
