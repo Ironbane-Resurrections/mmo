@@ -1,8 +1,8 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 import { entity } from './entity.js'
 import { finite_state_machine } from './finite-state-machine.js'
 import { player_state } from './player-state.js'
-import { defs } from '/shared/defs.js'
+import { defs } from '../shared/defs.js'
 
 export const player_entity = (() => {
   class CharacterFSM extends finite_state_machine.FiniteStateMachine {

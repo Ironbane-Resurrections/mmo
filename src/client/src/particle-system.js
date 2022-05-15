@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 
 export const particle_system = (() => {
   const _VS = `
@@ -162,7 +162,7 @@ export const particle_system = (() => {
       this.emissionRate_ = rate
     }
 
-    OnUpdate_(_) {}
+    OnUpdate_(_) { }
 
     Update(timeElapsed) {
       this.OnUpdate_(timeElapsed)

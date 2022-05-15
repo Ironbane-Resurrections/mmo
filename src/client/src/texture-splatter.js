@@ -1,7 +1,10 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
-import { math } from '/shared/math.js'
-import { spline } from '/shared/spline.js'
-import { terrain_constants } from '/shared/terrain-constants.js'
+import * as THREE from './three.module.js'
+
+//self.importScripts('./three.module.js')
+
+import { math } from '../shared/math.js'
+import { spline } from '../shared/spline.js'
+import { terrain_constants } from '../shared/terrain-constants.js'
 
 export const texture_splatter = (function () {
   const _HEIGHT_NORMALIZATION = terrain_constants.NOISE_HEIGHT / 10.0

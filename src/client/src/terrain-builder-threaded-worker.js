@@ -1,11 +1,12 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
+
 import { texture_splatter } from './texture-splatter.js'
-import { math } from '/shared/math.js'
-import { noise } from '/shared/noise.js'
-import { terrain_height } from '/shared/terrain-height.js'
+import { math } from '../shared/math.js'
+import { noise } from '../shared/noise.js'
+import { terrain_height } from '../shared/terrain-height.js'
 
 class _TerrainBuilderThreadedWorker {
-  constructor() {}
+  constructor() { }
 
   Init(params) {
     this._params = params

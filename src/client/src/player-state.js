@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 
 export const player_state = (() => {
   class State {
@@ -6,9 +6,9 @@ export const player_state = (() => {
       this._parent = parent
     }
 
-    Enter() {}
-    Exit() {}
-    Update() {}
+    Enter() { }
+    Exit() { }
+    Update() { }
   }
 
   class DeathState extends State {
@@ -39,9 +39,9 @@ export const player_state = (() => {
       }
     }
 
-    Exit() {}
+    Exit() { }
 
-    Update(_) {}
+    Update(_) { }
   }
 
   class DanceState extends State {
@@ -93,7 +93,7 @@ export const player_state = (() => {
       this._Cleanup()
     }
 
-    Update(_) {}
+    Update(_) { }
   }
 
   class AttackState extends State {
@@ -144,7 +144,7 @@ export const player_state = (() => {
       this._Cleanup()
     }
 
-    Update(_) {}
+    Update(_) { }
   }
 
   class WalkState extends State {
@@ -179,7 +179,7 @@ export const player_state = (() => {
       }
     }
 
-    Exit() {}
+    Exit() { }
 
     Update(timeElapsed, input) {
       if (!input) {
@@ -229,7 +229,7 @@ export const player_state = (() => {
       }
     }
 
-    Exit() {}
+    Exit() { }
 
     Update(timeElapsed, input) {
       if (!input) {
@@ -271,7 +271,7 @@ export const player_state = (() => {
       }
     }
 
-    Exit() {}
+    Exit() { }
 
     Update(_, input) {
       if (!input) {

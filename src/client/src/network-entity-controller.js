@@ -1,4 +1,4 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.124/build/three.module.js'
+import * as THREE from './three.module.js'
 import { entity } from './entity.js'
 
 export const network_entity_controller = (() => {
