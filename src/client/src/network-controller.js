@@ -44,10 +44,11 @@ export const network_controller = (() => {
 
     SetupSocket_() {
       // Edit as necessary
-      const socketHost = window.location.hostname
+      const proto = window.location.protocol.replace(/http/, 'ws')
+      const socketHost = window.location.host
       const socketPath = '/simmo/socket'
 
-      this.socket_ = io(`wss://${socketHost}`, {
+      this.socket_ = io(`${proto}//${socketHost}`, {
         path: socketPath,
         reconnection: false,
         transports: ['websocket'],

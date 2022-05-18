@@ -1,7 +1,7 @@
-import { config } from './config.js'
+const config = require("./config.js")
 
 require('sucrase/register')
-require('./src/server/index.js')
+
 
 const https = require('https')
 const fs = require('fs')
@@ -21,9 +21,5 @@ server.use(
   })
 )
 
-//server.listen(5000)
-https.createServer({
-  key: fs.readFileSync(config.key),
-  cert: fs.readFileSync(config.cert)
-}, server).listen(5000)
-console.log('serving content on https://localhost:5000')
+require('./src/server/index.js').Main(server, config)
+console.log(`serving content on https://localhost:${config.port}`)
