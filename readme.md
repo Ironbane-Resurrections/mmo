@@ -1,7 +1,10 @@
 ## Setup
 
 1. Copy `config.default.js` to `config.js`
-2. Edit `config.js` as necessary (update certificate/key paths)
+2. Edit `config.js` as necessary
+   - If you don't specify the certificate or key paths, the server will run in
+     HTTP only. This may not work on a web server due to
+     [secure contexts](https://w3c.github.io/webappsec-secure-contexts/).
 3. Run `node start-web.js`
 
 ## Prior Instructions
