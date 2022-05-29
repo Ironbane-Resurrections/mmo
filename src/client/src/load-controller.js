@@ -1,7 +1,14 @@
 import * as THREE from './three.module.js'
-import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/FBXLoader.js'
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
-import { SkeletonUtils } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/utils/SkeletonUtils.js'
+// import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.141/examples/jsm/loaders/FBXLoader.js'
+import { FBXLoader } from './FBXLoader.js'
+
+import { GLTFLoader } from './GLTFLoader.js'
+//import { SkeletonUtils } from 'https://cdn.jsdelivr.net/npm/three@0.141/examples/jsm/utils/SkeletonUtils.js'
+
+//import { SkeletonUtils } from './SkeletonUtils.js'  
+import * as SkeletonUtils from './SkeletonUtils.js'  
+
+
 import { entity } from './entity.js'
 
 export const load_controller = (() => {
