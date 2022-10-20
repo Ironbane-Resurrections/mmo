@@ -32,15 +32,12 @@
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.54",
     "concurrently": "6.1.0",
-    "electron-nightly": "14.0.0-nightly.20210514",
+    "electron-nightly":"14.0.0-nightly.20210514",
     "express": "4.17.1",
     "gl-matrix": "^3.3.0",
     "prettier": "2.2.1",
     "socket.io": "^4.0.1",
-    "sucrase": "^3.21.0",
+    "sucrase": "3.18.1",
     "typescript": "4.2.4"
-  },
-  "dependencies": {
-    "three": "^0.141.0"
   }
 }

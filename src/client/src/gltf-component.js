@@ -1,11 +1,6 @@
 import * as THREE from './three.module.js'
-// import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/FBXLoader.js'
-// import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
-
-//import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.141/examples/jsm/loaders/FBXLoader.js'
-import { FBXLoader } from './FBXLoader.js'
-
-import { GLTFLoader } from './GLTFLoader.js'
+import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/FBXLoader.js'
+import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
 import { entity } from './entity.js'
 
 export const gltf_component = (() => {
