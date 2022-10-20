@@ -251,7 +251,16 @@ void main() {
 
   // finalColour = vec3(sin(worldPosition.x), sin(worldPosition.y), sin(worldPosition.z));
 
-  gl_FragColor = vec4(finalColour, 1);
+
+  //Error: shader error:  0 35715 false gl.getProgramInfoLog Fragment shader is not compiled.
+  //THREE.WebGLShader: gl.getShaderInfoLog() fragment
+  //ERROR: 0:1512: 'gl_FragColor' : undeclared identifier
+  //https://stackoverflow.com/questions/26695253/when-switching-to-glsl-300-met-the-following-error
+  out vec4 fragColor;
+
+  //gl_FragColor = vec4(finalColour, 1);
+  //fragColor = vec4(1.0, 0.0, 0.0, 1.0);
+   fragColor = vec4(finalColour, 1);
 }
 
   `

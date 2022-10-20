@@ -1,5 +1,7 @@
 import * as THREE from './three.module.js'
-import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/FBXLoader.js'
+// import { FBXLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/FBXLoader.js'
+import { FBXLoader } from './FBXLoader.js'
+
 import { entity } from './entity.js'
 import { defs } from '../shared/defs.js'
 
