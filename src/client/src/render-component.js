@@ -1,6 +1,10 @@
 import * as THREE from './three.module.js'
-import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
-import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/OBJLoader.js'
+// import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/GLTFLoader.js'
+// import { OBJLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124/examples/jsm/loaders/OBJLoader.js'
+  
+import { GLTFLoader } from './GLTFLoader.js'
+import { OBJLoader } from './OBJLoader.js'
+
 import { entity } from './entity.js'
 
 export const render_component = (() => {
