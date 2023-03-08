@@ -57,9 +57,9 @@ export const terrain = (function () {
         vertexColors: true
       })
 
- /*      this._material.onBeforeCompile = (s) => {
-        //s.isWebGL2 = true
-        //s.glslVersion = "300 es"
+      this._material.onBeforeCompile = (s) => {
+        // s.isWebGL2 = true
+        // s.glslVersion = "300 es"
 
         let a = 0
         let vsh = s.vertexShader
@@ -84,7 +84,7 @@ export const terrain = (function () {
         }
 
         // s.fragmentShader += 'poop';
-      } */
+      }
 
       this._builder = new terrain_builder_threaded.TerrainChunkRebuilder_Threaded()
       // this._builder = new terrain_builder.TerrainChunkRebuilder();

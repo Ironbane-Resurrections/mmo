@@ -46,7 +46,7 @@ export const network_controller = (() => {
       // Edit as necessary
       const proto = window.location.protocol.replace(/http/, 'ws')
       const socketHost = window.location.host
-      const socketPath = '/simmo/socket'
+      const socketPath = '/mmo/socket'
 
       this.socket_ = io(`${proto}//${socketHost}`, {
         path: socketPath,
